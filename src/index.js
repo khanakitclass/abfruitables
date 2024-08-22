@@ -39,7 +39,7 @@ app.use(express.static(path.resolve('./public')));
 app.use(cors(
   {
     // origin: process.env.SCOKETIO_URL,
-    origin: "https://fruitable-frontend-five.vercel.app",
+    origin: "https://afruitables.vercel.app",
     credentials: true
 
   }
