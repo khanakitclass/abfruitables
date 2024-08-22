@@ -33,7 +33,9 @@ app.use(
     }
   })
 );
-app.use(express.static(path.resolve(__dirname, 'public')));
+// app.use(express.static(path.resolve(__dirname, 'public')));
+app.use('/public', express.static(path.join(__dirname, 'public')))
+
 app.use('/tmp', express.static('/tmp'));
 
 // const swaggerDocument = YAML.load('./src/api.yaml'); 
