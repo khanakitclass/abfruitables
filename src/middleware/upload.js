@@ -5,7 +5,7 @@ const path = require('path');
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         const folderName = file.fieldname;
-        const uploadPath = path.join('public', folderName);
+        const uploadPath = path.join('../public', folderName);
 
         fs.mkdir(uploadPath, { recursive: true }, function (err) {
             if (err) {
